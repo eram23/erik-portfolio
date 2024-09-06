@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Case Study of Project 1</title>
+    <meta name="description" content="Case study page of Project" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <!-- <div class="header__logo-img-cont">
+            <img
+              src="./assets/img/avatar.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div> -->
+          <span class="header__logo-sub">Erik Ramirez</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+            
+             <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+           
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Anime Quiz App</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Learn more about this project below!
+          </p>
+        </div>
+        <!-- <div class="project-cs-hero__cta">
+          <a href="https://anime-quizapp.netlify.app/" class="btn btn--bg" target="_blank">Project Deployment</a>
+        </div> -->
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <!-- <img
+              src="./assets/img/quiz.jpg"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            /> -->
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Planning</h3>
+              <p class="project-details__desc-para">
+                The challenge to build a quiz app with React was part of Scrimba's React
+                fundamentals course. This included building an app with React components, passing props,
+                using fetch API, and conditionally rendering components. I made the project my own by 
+                fetching data that is only anime themed and styling the project to match that.
+              </p>
+              <p class="project-details__desc-para">
+                We were given a Figma file to start and have reference to while building the project. Here 
+                is the redesigned version I created so that my project could stand apart.
+              </p>
+
+              <h3 class="project-details__content-title">Development</h3>
+              <p class="project-details__desc-para">
+                Before anything else, I wanted to make sure my project functioned correctly before adding
+                any styling. I started by organizing my components into a folder and naming them appropriatly 
+                so that the heirarchy is clear. 
+              </p>
+              <p class="project-details__desc-para">
+                I found that this made it easier to divide the data into the proper components once I received it
+                from the fetch API. The components I decided to use were Questions, Answers, and Button. This way I could pass
+                all the correct data into each component through props and organize the logic.
+              </p>
+              <p class="project-details__desc-para">
+                
+              </p>
+              
+              <h3 class="project-details__content-title">Results</h3>
+              <p class="project-details__desc-para">
+                The most challenging part of the project was getting the functionality of it to work as intended and 
+                to update the user UI so that they are aware of what answers they answered right and wrong. Another challenge I faced
+                was correctly accessing the data that was saved to state when the app first renders. 
+              </p>
+              <p class="project-details__desc-para">
+                I was able to update the UI by conditionally rendering the styles and classNames to the buttons only after the user has 
+                submitted their quiz answers. Combined with state the app returns the buttons with the appropriate styles that correspond with 
+                the user answer choices.  
+              </p>
+              <p class="project-details__desc-para">
+                To be more specific about accessing my saved data, the data that was challenging for me to use was the options for each question. I soon learned that 
+                the most logical way for my solution was to map through my state once again and save each question option into its own const that contained the set of 
+                answers being propped into html buttons.
+               <code >
+                  <pre>
+                    const answerOptions = props.answers.map((answer, index) =&gt; &#123;
+                        return (
+                            &lt;Button
+                            index=&#123;props.index&#125;
+                            answer=&#123;answer&#125;
+                            toggleSelectedAnswer=&#123;toggleSelectedAnswer&#125;
+                            quizData=&#123;props.quizData&#125;
+                            userAnswers=&#123;props.userAnswers&#125;
+                            answerSelected=&#123;answerSelected&#125;
+                            results=&#123;props.results&#125;
+                            /&gt;
+                        )
+                    &#125;)
+                  </pre>
+                </code>
+              </p>
+              <p class="project-details__desc-para">
+                Overrall, this was a huge learning curve for me that helped me solidify my fundamentals of React. It was very beneficial for me to map over data 
+                and use it in different components as well as the state of my app. I am proud of how this project came out and look forward to create more apps 
+                with React so that I can continue to challenge myself and learn other methods.
+              </p>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">React</div>
+                <div class="skills__skill">JSX</div>
+                <div class="skills__skill">Vite</div>
+                <div class="skills__skill">RESTful API</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">Netlify</div>
+                <div class="skills__skill">Github</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Live</h3>
+              <a
+                href="https://anime-quizapp.netlify.app/"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >View Live Site</a
+              >
+              <a
+                href="https://github.com/eram23/quizzical-app"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://github.com/eram23">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/erik-ramirez-atl/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Erik Ramirez</h4>
+            <p class="main-footer__short-desc">
+              I specialize in front-end development & design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
