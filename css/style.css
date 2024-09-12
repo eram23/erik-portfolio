@@ -57,6 +57,11 @@ a {
   color: inherit; 
 }
 
+.project-details__desc-para a {
+  color: var(--main-color-pinegreen);
+  font-weight: 700;
+}
+
 i {
   font-size: 2em;
   margin-right: 1em;
