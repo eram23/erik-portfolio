@@ -113,19 +113,25 @@
               </p>
               <h3 class="project-details__content-title">Development</h3>
               <p class="project-details__desc-para">
-                The HTML is structured in 3 different main sections which are the timers, input task field, and the task lists. They are all direct 
-                childrens of a main container that holds the app together.
-              </p>
-              <p class="project-details__desc-para">
-                Creating this app helped me understand how to use local storage and how to use it so that the user is able to save and delete their
-                tasks while using the app. It was also great way for me to practice the <code>setInterval()</code> method of JS to add functionality
-                to the timer.
+                This part was pretty straightforward. The main idea was to create each component and make it so that the use can insert children into 
+                each one as props so the content can be adjusted to fit the user's needs. 
+              </p >
+              <p class="project-details__desc-para">One aspect I did have to consider was how to style each component and what aspects I wanted to be customizable by the end user. For example, 
+                I made it easy for the user to choose what kind of button they need by adding a specific class name but if they want to change the background 
+                color to something completely different outside of the matcha theme, they would have to go into the css file and edit it manually,
               </p>
               
               <h3 class="project-details__content-title">Results</h3>
               <p class="project-details__desc-para">
-                I benefited a lot from this project by being able to practice my JS, implementing local storage, and creating an app that has helped
-                me stay on track of my goals.
+                This project helped me understand the power of React when it comes to creating large applications that require reusable components and how the developer 
+                would have to create each one with the intention of it being used in multiple different pages. 
+              </p>
+              <p class="project-details__desc-para">
+                This approach ensures that the end user has a consistent experience using the components. Another benefit of reusing components is writing less code 
+                and saving time to complete the project they are being applied to.
+              </p>
+              <p class="project-details__desc-para">
+                At the moment this project is still a WIP and I am currently working on the dark theme toggle for all the components.
               </p>
             </div>
             <div class="project-details__tools-used">
@@ -202,19 +208,11 @@
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Jane Smith</h4>
+            <h4 class="heading heading-sm text-lt">Erik Ramirez</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              I specialize in front-end development & design.
             </p>
           </div>
-        </div>
-
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
         </div>
       </div>
     </footer>
