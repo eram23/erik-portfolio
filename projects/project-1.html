@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Study App</title>
+    <title>Case Study of Quiz App</title>
     <meta name="description" content="Case study page of Project" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet"/>
@@ -84,7 +84,7 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Study App</h1>
+        <h1 class="heading-primary">Anime Quiz App</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
             Learn more about this project below!
@@ -109,53 +109,78 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Planning</h3>
               <p class="project-details__desc-para">
-                The problem that I wanted to solve was that I wanted to maximize my productivity so that I could efficiently 
-                teach myself how to code everyday and set daily goals for myself. While there are plenty of resources out there
-                such as the built in clock on Windows, Notion, and Focus To-Do extension; I wanted to put my newly acquired JavaScript
-                skills to the test and build my own.
+                The challenge to build a quiz app with React was part of Scrimba's React
+                fundamentals course. This included building an app with React components, passing props,
+                using fetch API, and conditionally rendering components. I made the project my own by 
+                fetching data that is only anime themed and styling the project to match that.
               </p>
-
               <p class="project-details__desc-para">
-                One of the methods I learned about while researching ways to be more productive that kept appearing was the Pomodoro method.
-                Itj's essentially a way of slowly working up the amount of time working. For example, you can set 4 sessions to be productive
-                with the first one being 10 minutes long with a break of 5 minutes. Then the second session is 30 minutes of work with a 15 minute
-                break and so on.
-              </p>
-              
-              <p class="project-details__desc-para">
-                I wanted a more customizable approach meaning I don't want the user to be locked into a set amount of sessions or a set amount of 
-                study time while still being able to sit down for a productive amount of time. So I decided the make the timer at least 5 minutes
-                for both the break and timer. They both also reset when they run out. 
+                We were given a Figma file to start and have reference to while building the project. Here 
+                is the redesigned version I created so that my project could stand apart.
               </p>
 
               <h3 class="project-details__content-title">Development</h3>
               <p class="project-details__desc-para">
-                The HTML is structured in 3 different main sections which are the timers, input task field, and the task lists. They are all direct 
-                childrens of a main container that holds the app together.
+                Before anything else, I wanted to make sure my project functioned correctly before adding
+                any styling. I started by organizing my components into a folder and naming them appropriatly 
+                so that the heirarchy is clear. 
               </p>
               <p class="project-details__desc-para">
-                Creating this app helped me understand how to use local storage and how to use it so that the user is able to save and delete their
-                tasks while using the app. It was also great way for me to practice the <code>setInterval()</code> method of JS to add functionality
-                to the timer.
+                I found that this made it easier to divide the data into the proper components once I received it
+                from the fetch API. The components I decided to use were Questions, Answers, and Button. This way I could pass
+                all the correct data into each component through props and organize the logic.
+              </p>
+              <p class="project-details__desc-para">
+                
               </p>
               
               <h3 class="project-details__content-title">Results</h3>
               <p class="project-details__desc-para">
-                I benefited a lot from this project by being able to practice my JS, implementing local storage, and creating an app that has helped
-                me stay on track of my goals.
+                The most challenging part of the project was getting the functionality of it to work as intended and 
+                to update the user UI so that they are aware of what answers they answered right and wrong. Another challenge I faced
+                was correctly accessing the data that was saved to state when the app first renders. 
               </p>
               <p class="project-details__desc-para">
-                In the future I may beef this project up by adding different alarm sounds, editting an already added task item, or making the appearance
-                customizable by the user (so they are not forced to seeing it only in green 😅). For now, it has been of great help to me in my developer journey.
+                I was able to update the UI by conditionally rendering the styles and classNames to the buttons only after the user has 
+                submitted their quiz answers. Combined with state the app returns the buttons with the appropriate styles that correspond with 
+                the user answer choices.  
+              </p>
+              <p class="project-details__desc-para">
+                To be more specific about accessing my saved data, the data that was challenging for me to use was the options for each question. I soon learned that 
+                the most logical way for my solution was to map through my state once again and save each question option into its own const that contained the set of 
+                answers being propped into html buttons.
+               <code >
+                  <pre>
+                    const answerOptions = props.answers.map((answer, index) =&gt; &#123;
+                        return (
+                            &lt;Button
+                            index=&#123;props.index&#125;
+                            answer=&#123;answer&#125;
+                            toggleSelectedAnswer=&#123;toggleSelectedAnswer&#125;
+                            quizData=&#123;props.quizData&#125;
+                            userAnswers=&#123;props.userAnswers&#125;
+                            answerSelected=&#123;answerSelected&#125;
+                            results=&#123;props.results&#125;
+                            /&gt;
+                        )
+                    &#125;)
+                  </pre>
+                </code>
+              </p>
+              <p class="project-details__desc-para">
+                Overrall, this was a huge learning curve for me that helped me solidify my fundamentals of React. It was very beneficial for me to map over data 
+                and use it in different components as well as the state of my app. I am proud of how this project came out and look forward to create more apps 
+                with React so that I can continue to challenge myself and learn other methods.
               </p>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">React</div>
+                <div class="skills__skill">JSX</div>
+                <div class="skills__skill">Vite</div>
+                <div class="skills__skill">RESTful API</div>
                 <div class="skills__skill">CSS</div>
-                <div class="skills__skill">Local Storage</div>
                 <div class="skills__skill">Netlify</div>
                 <div class="skills__skill">Github</div>
               </div>
@@ -163,13 +188,13 @@
             <div class="project-details__links">
               <h3 class="project-details__content-title">See Live</h3>
               <a
-                href="https://eram23.github.io/to-do-app/"
+                href="https://anime-quizapp.netlify.app/"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
                 >View Live Site</a
               >
               <a
-                href="https://github.com/eram23/to-do-app"
+                href="https://github.com/eram23/quizzical-app"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
                 >Github</a

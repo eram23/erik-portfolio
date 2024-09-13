@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Quiz App</title>
+    <title>Project-2</title>
     <meta name="description" content="Case study page of Project" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -36,11 +35,9 @@
                 Projects
               </a>
             </li>
-            
-            <li class="header__link-wrapper">
+             <li class="header__link-wrapper">
               <a href="./index.html#about" class="header__link">About </a>
             </li>
-            
             <li class="header__link-wrapper">
               <a href="./index.html#contact" class="header__link"> Contact </a>
             </li>
@@ -65,8 +62,8 @@
             <li class="header__sm-menu-link">
               <a href="./index.html"> Home </a>
             </li>
-            
-             <li class="header__sm-menu-link">
+
+            <li class="header__sm-menu-link">
               <a href="./index.html#projects"> Projects </a>
             </li>
 
@@ -74,7 +71,6 @@
               <a href="./index.html#about"> About </a>
             </li>
 
-           
             <li class="header__sm-menu-link">
               <a href="./index.html#contact"> Contact </a>
             </li>
@@ -84,117 +80,79 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Anime Quiz App</h1>
+        <h1 class="heading-primary">Matcha React Component Library</h1>
         <div class="project-cs-hero__info">
-          <p class="text-primary">
-            Learn more about this project below!
-          </p>
+          <!-- <p class="text-primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            in numquam incidunt earum quaerat cum fuga, atque similique natus
+            nobis sit.
+          </p> -->
         </div>
-        <!-- <div class="project-cs-hero__cta">
-          <a href="https://anime-quizapp.netlify.app/" class="btn btn--bg" target="_blank">Project Deployment</a>
-        </div> -->
       </div>
     </section>
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-            <!-- <img
-              src="./assets/img/quiz.jpg"
+          <!-- <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/img/dashboard.png"
               alt="Project Image"
               class="project-details__showcase-img"
-            /> -->
-          </div>
+            />
+          </div> -->
           <div class="project-details__content-main">
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Planning</h3>
               <p class="project-details__desc-para">
-                The challenge to build a quiz app with React was part of Scrimba's React
-                fundamentals course. This included building an app with React components, passing props,
-                using fetch API, and conditionally rendering components. I made the project my own by 
-                fetching data that is only anime themed and styling the project to match that.
+                After learning about the reusability and adaptability of React components, I wanted to build my own library with a common theme.
+                The purpose of this project was to create something that I may be able to use in future projects and to get more familiar with 
+                building components in React.
               </p>
-              <p class="project-details__desc-para">
-                We were given a Figma file to start and have reference to while building the project. Here 
-                is the redesigned version I created so that my project could stand apart.
+              <p class="project-details__desc-para">Before anything I built the design file in Figma and went with a matcha theme since it has an earthy look and taste that I am 
+                fond of. You can view the design files <a href="https://www.figma.com/design/cHheUqsRFPolY9wd1ppODr/Component-Library-Matcha?node-id=0-1&node-type=canvas&t=thYueg0rqs4Iu3Px-0" target="_blank">here</a>.
               </p>
-
               <h3 class="project-details__content-title">Development</h3>
               <p class="project-details__desc-para">
-                Before anything else, I wanted to make sure my project functioned correctly before adding
-                any styling. I started by organizing my components into a folder and naming them appropriatly 
-                so that the heirarchy is clear. 
-              </p>
-              <p class="project-details__desc-para">
-                I found that this made it easier to divide the data into the proper components once I received it
-                from the fetch API. The components I decided to use were Questions, Answers, and Button. This way I could pass
-                all the correct data into each component through props and organize the logic.
-              </p>
-              <p class="project-details__desc-para">
-                
+                This part was pretty straightforward. The main idea was to create each component and make it so that the use can insert children into 
+                each one as props so the content can be adjusted to fit the user's needs. 
+              </p >
+              <p class="project-details__desc-para">One aspect I did have to consider was how to style each component and what aspects I wanted to be customizable by the end user. For example, 
+                I made it easy for the user to choose what kind of button they need by adding a specific class name but if they want to change the background 
+                color to something completely different outside of the matcha theme, they would have to go into the css file and edit it manually,
               </p>
               
               <h3 class="project-details__content-title">Results</h3>
               <p class="project-details__desc-para">
-                The most challenging part of the project was getting the functionality of it to work as intended and 
-                to update the user UI so that they are aware of what answers they answered right and wrong. Another challenge I faced
-                was correctly accessing the data that was saved to state when the app first renders. 
+                This project helped me understand the power of React when it comes to creating large applications that require reusable components and how the developer 
+                would have to create each one with the intention of it being used in multiple different pages. 
               </p>
               <p class="project-details__desc-para">
-                I was able to update the UI by conditionally rendering the styles and classNames to the buttons only after the user has 
-                submitted their quiz answers. Combined with state the app returns the buttons with the appropriate styles that correspond with 
-                the user answer choices.  
+                This approach ensures that the end user has a consistent experience using the components. Another benefit of reusing components is writing less code 
+                and saving time to complete the project they are being applied to.
               </p>
               <p class="project-details__desc-para">
-                To be more specific about accessing my saved data, the data that was challenging for me to use was the options for each question. I soon learned that 
-                the most logical way for my solution was to map through my state once again and save each question option into its own const that contained the set of 
-                answers being propped into html buttons.
-               <code >
-                  <pre>
-                    const answerOptions = props.answers.map((answer, index) =&gt; &#123;
-                        return (
-                            &lt;Button
-                            index=&#123;props.index&#125;
-                            answer=&#123;answer&#125;
-                            toggleSelectedAnswer=&#123;toggleSelectedAnswer&#125;
-                            quizData=&#123;props.quizData&#125;
-                            userAnswers=&#123;props.userAnswers&#125;
-                            answerSelected=&#123;answerSelected&#125;
-                            results=&#123;props.results&#125;
-                            /&gt;
-                        )
-                    &#125;)
-                  </pre>
-                </code>
-              </p>
-              <p class="project-details__desc-para">
-                Overrall, this was a huge learning curve for me that helped me solidify my fundamentals of React. It was very beneficial for me to map over data 
-                and use it in different components as well as the state of my app. I am proud of how this project came out and look forward to create more apps 
-                with React so that I can continue to challenge myself and learn other methods.
+                At the moment this project is still a WIP and I am currently working on the dark theme toggle for all the components.
               </p>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
                 <div class="skills__skill">React</div>
-                <div class="skills__skill">JSX</div>
-                <div class="skills__skill">Vite</div>
-                <div class="skills__skill">RESTful API</div>
+                <div class="skills__skill">JavaScript</div>
                 <div class="skills__skill">CSS</div>
-                <div class="skills__skill">Netlify</div>
-                <div class="skills__skill">Github</div>
+                <div class="skills__skill">HTML</div>
               </div>
             </div>
             <div class="project-details__links">
               <h3 class="project-details__content-title">See Live</h3>
               <a
-                href="https://anime-quizapp.netlify.app/"
+                href="https://matcha-components.netlify.app/#"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
                 >View Live Site</a
               >
               <a
-                href="https://github.com/eram23/quizzical-app"
+                href="https://github.com/eram23/matcha-react-components-library"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
                 >Github</a
@@ -212,11 +170,40 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://github.com/eram23">
-                <i class="fa-brands fa-github"></i>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/img/linkedin-ico.png"
+                  alt="icon"
+                />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/erik-ramirez-atl/">
-                <i class="fa-brands fa-linkedin"></i>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/img/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/img/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/img/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/img/insta-ico.png"
+                  alt="icon"
+                />
               </a>
             </div>
           </div>
