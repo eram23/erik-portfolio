@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s09gbamnvt",
-  "description": "https://v2.scrimba.com/s02cito?pl=p5PxYsw",
+  "name": "Erik Ramirez Portfolio",
+  "description": "my web developer Portfolio",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -10,5 +10,9 @@
   "dependencies": {
     "vite": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Erik Ramirez",
+  "license": "ISC"
 }
